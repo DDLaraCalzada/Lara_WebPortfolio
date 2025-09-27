@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lara | Ingeniero Multimedia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Dayan David</h1>
+      <p>Ingeniero Multimedia | IA & Unity</p>
+      <a href="#portafolio" class="btn">Ver Portafolio</a>
+    </header>
+
+    <section class="about">
+      <h2>Sobre mí</h2>
+      <p>
+        Desarrollador con experiencia en aplicaciones interactivas y sistemas de
+        inteligencia visual, especializado en Unity, realidad aumentada (AR),
+        realidad virtual (VR) y visión por computadora. He creado soluciones
+        innovadoras que van desde asistentes virtuales en AR para centros
+        comerciales y simuladores de apartamentos en VR, hasta videojuegos tipo
+        Visual Novel y Match 3. Además, he trabajado en proyectos de IA
+        aplicada, incluyendo clasificación de frutas con YOLOv8 y comparativas
+        de servicios de visión por computadora de Google y Azure. Mi enfoque
+        combina creatividad, usabilidad y rigor técnico para generar
+        experiencias inmersivas y aplicaciones prácticas de alto impacto.
+      </p>
+    </section>
+
+    <section class="projects" id="portafolio">
+      <h2>Proyectos</h2>
+      <div class="project-grid">
+        <div class="project-card" onclick="openModal('lili')">
+          <h3>Novela Visual</h3>
+          <p>
+            Este es un prototipo de novela visual estilo anime desarrollado en
+            Unity.
+          </p>
+        </div>
+        <div class="project-card" onclick="openModal('match3')">
+          <h3>Match 3 | Time Attack</h3>
+          <p>Juego tipo puzzle Match 3 en Unity.</p>
+        </div>
+        <div class="project-card" onclick="openModal('apartamentoVR')">
+          <h3>Simulación de Apartamento</h3>
+          <p>Exploración inmersiva y personalización en Oculus con Unity.</p>
+        </div>
+        <div class="project-card" onclick="openModal('clasificacionFrutas')">
+          <h3>Clasificación de Frutas con YOLOv8</h3>
+          <p>Visión por computadora en tiempo real con Python y OpenCV.</p>
+        </div>
+        <div class="project-card" onclick="openModal('visionComparativa')">
+          <h3>Comparativa Vision API | Google vs Azure</h3>
+          <p>Detección de objetos con Flask y Vagrant.</p>
+        </div>
+        <div class="project-card" onclick="openModal('asistenteAR')">
+          <h3>App AR + Asistente Virtual</h3>
+          <p>Guía interactiva para centros comerciales con Unity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contacto</h2>
+      <p>
+        ¿Colaboramos? Escríbeme a
+        <a href="mailto:dlara0303@gmail.com">dlara0303@gmail.com</a>
+      </p>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <ul id="modal-tech"></ul>
+        <a id="modal-repo" href="#" target="_blank" class="repo-link"
+          >Ver repositorio</a
+        >
+        <div class="video-container">
+          <iframe
+            id="modal-video"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Dayan David | Portafolio</p>
+    </footer>
+  </body>
+</html>
